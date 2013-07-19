@@ -1,6 +1,6 @@
 name := "slick-transactional"
 
-version := "0.0.1"
+version := "0.0.1-EXPERIMENTAL"
 
 scalaVersion := "2.10.1"
 
@@ -9,6 +9,8 @@ organizationName := "WiredThing"
 organization := "com.wiredthing"
 
 libraryDependencies += "com.typesafe.slick" %% "slick" % "1.0.0"
+
+libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.10.1"
 
 shellPrompt <<= (thisProjectRef, version) { (id, v) =>
 	object devnull extends ProcessLogger {
